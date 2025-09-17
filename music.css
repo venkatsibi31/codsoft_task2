@@ -1,0 +1,47 @@
+/* General */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; color: #333; line-height: 1.6; }
+.container { width: 90%; max-width: 1100px; margin: auto; }
+
+/* Header */
+header { background: #1e3a8a; color: #fff; padding: 15px 0; }
+header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 600; }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { color: #fff; text-decoration: none; font-weight: 500; }
+nav a:hover { text-decoration: underline; }
+
+/* Hero */
+#hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://picsum.photos/1600/900?music') no-repeat center center/cover;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 20px;
+}
+.hero-content h2 { font-size: 2.5rem; margin-bottom: 15px; }
+.hero-content p { margin-bottom: 20px; font-size: 1.2rem; }
+.btn { background: #f97316; color: #fff; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 600; }
+.btn:hover { background: #ea580c; }
+
+/* Options */
+#options { padding: 60px 0; background: #f9fafb; text-align: center; }
+.section-title { font-size: 2rem; margin-bottom: 30px; }
+.options-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1e3a8a; color: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, background 0.3s;
+}
+.card:hover { transform: scale(1.05); background: #3b82f6; }
+
+/* Contact & Footer */
+#contact { padding: 60px 0; text-align: center; }
+footer { background: #1e3a8a; color: #fff; text-align: center; padding: 15px 0; }
